@@ -15,8 +15,8 @@ class Controller extends BaseController
 
     public function callYoutubeApi($keyword) {
         $url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&key=';
-         $key = 'AIzaSyDc8Dn34ikz5xw5z4yngW1JOyJKDn5X4tc'; /** alternative key */
-       // $key = 'AIzaSyD0ANuXFwZJtW0dSsqN70Kt9tdJ3wC1HnU';
+       //  $key = 'AIzaSyDc8Dn34ikz5xw5z4yngW1JOyJKDn5X4tc'; /** alternative key */
+        $key = 'AIzaSyD0ANuXFwZJtW0dSsqN70Kt9tdJ3wC1HnU';
        
         return  Http::get($url . $key . '&q=' . $keyword)->json();
      }

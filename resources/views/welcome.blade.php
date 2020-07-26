@@ -23,11 +23,13 @@
             <div class = "row">
                 <div class = "col-lg-6">   
                     <form id="keywordForm" method="post" action="">
-                        <div class="input-group">
+                        <div class="input-group mb-3">
                             <input type="text" class="form-control" id="keyword" placeholder="Search" name="search">
-                            <div class="input-group-btn">
-                                <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="submit"><span class="fas fa-search"></span></button>
                             </div>
+                        </div>  
+                        
                     </form>
                 </div>
             </div>
